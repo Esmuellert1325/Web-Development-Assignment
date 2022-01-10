@@ -1,0 +1,466 @@
+@font-face {
+    font-family: "Title";
+    src: url(arcade-classic.TTF) format("opentype"); 
+}
+
+@font-face {
+    font-family: "Text";
+    src: url(titilliumweb-light.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 25px;
+    font-family: "Text";
+    line-height: 1.5;
+    background-color: rgba( 177, 82, 203, 0.7 );
+}
+
+header {
+    background-image: url(header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 400px;
+    text-align: center;
+}
+
+header .title {
+    font-size: 300%;
+    color: #fab10a;
+    text-shadow: 5px 5px 25px rgb( 255, 87, 51);
+    font-family: "Title";
+    text-decoration: none;
+    position: relative;
+    bottom: 250px;
+}
+
+header .mainTitle {
+    font-size: 220%;
+    color: #fab10a;
+    text-shadow: 5px 5px 25px rgb( 255, 87, 51);
+    font-family: "Title";
+    position: relative;
+    bottom: 195px;
+}
+
+header .slogan {
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    margin-top: 10px;
+    text-shadow: 15px 15px 25px rgba(0,0,0, 1);
+    margin-bottom: 65px;
+    position: relative;
+    bottom: 245px;
+    font-size: 115%;
+}
+
+nav {
+    background: #f30afa;
+    margin-top: -180px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none; /* Nem lesznek pöttyök */
+    padding: 15px 15px;
+}
+
+nav ul a {
+    text-decoration: none; /* Nincs aláhúzás */
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+    font-family: "Text";
+    text-shadow: 3px 3px 15px rgb(0, 0, 0);
+    transition: 0.65s;
+    padding: 5px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    border-radius: 50px;
+}
+
+nav a:hover {
+    color: rgba(250, 254, 0, 0.8);
+    background-color: rgba(184, 13, 187, 1);
+
+}
+
+nav li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    padding-top: 10px;
+    text-align: center;
+    color: #29007a;
+    font-weight: 1000;
+}
+
+p {
+    font-size: 55%;
+    font-weight: bolder;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+footer {
+    background-color: #b70bde;
+    padding: 10px 0;
+    /* TODO: BORDER */
+}
+
+.footer-box {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 33%;
+    padding: 0px 15px;
+    color: #fff;
+    text-shadow: 2px 2px #aa2872;
+}
+
+.footer-col p {
+    padding: 5px 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: rgba(255, 255, 255, 1.0);
+    transition: 0.4s;
+}
+
+.footer-box h4 {
+    font-size: 30px;
+    text-align: center;   
+    color: #fab10a;
+}
+
+.footer-box p {
+    text-align: center;
+}
+
+.footer-box a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    transition: 0.4s;
+}
+
+.footer-box a:hover {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1.0);
+    cursor: pointer;
+}
+
+.gameBox {
+    max-width: 990px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 100px;
+    border-radius: 18px;
+}
+
+.credits div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.credits div a {
+    text-align: center;
+    text-decoration: none;
+    color: rgba(247, 176, 12, 1.0);
+    text-shadow: rgb(0, 0, 0) 0.5px 0.5px;
+    transition: 0.4s;
+}
+
+.credits div a:hover {
+    cursor: pointer;
+    color: rgba(247, 176, 12, 0.8);
+}
+
+.gameCol {
+    width: 33%;
+    padding: 0px 20px;
+    margin-top: 15px;
+}
+
+.gameCol p {
+    padding: 15px 30px;
+    margin: auto;
+    font-size: 85%;
+}
+
+.gameCol img {
+    display: block;
+    height: 60px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.gameCol .playBox {
+    padding: 15px 30px;
+    margin: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    position: relative;
+    width: 155px;
+    height: 55px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(247, 243, 12, 0.9);
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 0.5px solid #29007a;
+}
+
+.gameCol .playBox:hover {
+    font-size: 115%;
+    cursor: pointer;
+    border: 3px solid black;
+    background: #ff9700;
+}
+
+.gameCol .playBox h4 {
+    position: relative;
+    color: #29007a;
+    z-index: 10;
+}
+
+.site-container {
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 2rem;
+}
+
+.article-image {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}           
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.article-card {
+    background: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.article-card:hover {
+    box-shadow: 0 16px 60px 0 rgba(148, 10, 167, 0.6);
+    cursor: pointer;
+}
+
+.article-content {
+    padding: 2rem;
+
+}
+
+.article-content .card-category {
+    font-size: 0.975rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #6b82a7;
+    display: block;
+    text-decoration: none;
+} 
+
+.article-content .card-title {
+    margin: 1rem 0;
+    color: #22447b;
+}
+.article-content .card-excerpt {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #6b82a7;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .site-container {
+        max-width: 608px;
+    }
+    .article-card {
+        display: grid;
+        grid-template-rows: 220px 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .site-container {
+        max-width: 1156px;
+    }
+}
+
+.article-p {
+    font-size: 105%;
+    font-weight: bolder;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.article-box {
+    width: 80vw;
+    background: #fff;
+    margin: 35px 10vw;
+    padding: 8px 0;
+    box-shadow: 10px 10px rgba(0,0,0, 0.6);
+    border-radius: 15px;
+    word-spacing: 1px;
+}
+
+.written-by {
+    color: #22447b;;
+    font-size: 85%;
+    font-weight: bolder;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+/* Hamburger Menu */
+.hamburger-bar {
+    width: 35px;
+    height: 5px;
+    background-color: #280079;
+    margin: 6px 0;
+}
+
+.hamburger {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    margin: 5px 20px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-ul {
+        display:none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-ul.show {
+        display:flex;
+    }
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+.donation-box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px #dee1e3;
+    background-color: #fff;
+    text-align: left;
+    overflow: hidden;
+}
+
+thead {
+    box-shadow: 0 5px 10px #dee1e3;
+}
+
+th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+.quality {
+    border-radius: 0.2rem;
+    background-color: red;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.quality-gold{
+    background-color: #fab10a;
+}
+
+.quality-silver{
+    background-color: #ababab;
+}
+
+.quality-bronze{
+    background-color: #8e5638;
+}
+
+tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+.dnt-btn {
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: #fc9100;
+    color: #fcf100;
+    text-shadow: 1px 1px #000;
+    height: 50px;
+    width: 180px;
+    font-family: "Text";
+    font-size: 85%;
+    border: none;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.dnt-btn:hover {
+    cursor: pointer;
+    background-color: #da8715;
+    text-shadow: none;
+}
